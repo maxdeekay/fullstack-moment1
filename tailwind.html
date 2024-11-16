@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-[Poppins] h-screen bg-gradient-to-t from-[#79b8f2] to-[#f16491] flex flex-col">
+    <header class="flex justify-between items-center w-[92%] h-[70px] mx-auto">
+        <img class="w-20" src="images/tailwind-icon.png">
+        <nav class="">
+            <ul class="flex items-center gap-[4vw] font-semibold">
+                <li><a class="hover:text-white" href="index.html">Startsida</a></li>
+                <li><a class="text-white" href="tailwind.html" >Tailwind</a></li>
+                <li><a class="hover:text-white" href="materialize.html">Materialize</a></li>
+                <li><a class="hover:text-white" href="publicering.html">Publicering</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-row bg-white/[0.6] w-[700px] max-w-full mx-auto mt-10 p-10 rounded-md">
+        <article>
+            <h2 class="font-semibold">Tailwind</h2>
+            <p>Denna undersida är i sin helhet stylad med Tailwind CSS.</p>
+        </article>
+
+        <article>
+            <table class="min-w-full divide-y divide-[#f16491] mt-2">
+                <thead>
+                    <tr>
+                        <th class="font-medium text-gray-800 text-start px-3 py-3">TITEL</th>
+                        <th class="font-medium text-gray-800 text-start px-3 py-3">ARTIST</th>
+                        <th class="font-medium text-gray-800 text-start px-3 py-3">ALBUM</th>
+                        <th class="font-medium text-gray-800 text-start px-3 py-3">ÅRTAL</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-[#f16491]">
+                    <tr>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">Two Faced</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">Linkin Park</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">From Zero</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">2024</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">The Emptiness Machine</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">Linkin Park</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">From Zero</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">2024</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">Faint</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">Linkin Park</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">Meteora</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">2003</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">Papercut</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">Linkin Park</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">Hybrid Theory</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">2000</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">Bleed it Out</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">Linkin Park</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">Minutes to Midnight</td>
+                        <td class="px-3 py-4 whitespace-nowrap text-sm">2007</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article>
+            <form class="max-w-80 mt-10">
+                <div class="">
+                    <h2 class="text-base/7 font-semibold text-gray-900">Lägg till låt</h2>
+                    <p class="mt-1 text-sm/6 text-gray-600">Fyll i nedanför för att lägga till en låt</p>
+
+                    <div>
+                        <div class="mt-2">
+                            <label for="title" class="block text-sm/6 font-medium text-gray-900">Titel</label>
+                            <input type="text" name="title" id="title" class="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#79b8f2] sm:text-sm/6 outline-none">
+                        </div>
+                        <div class="mt-2">
+                            <label for="artist" class="block text-sm/6 font-medium text-gray-900">Artist</label>
+                            <input type="text" name="artist" id="artist" class="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#79b8f2] sm:text-sm/6 outline-none">
+                        </div>
+                        <div>
+                            <label for="artist" class="block text-sm/6 font-medium text-gray-900">Artist</label>
+                            <input type="text" name="artist" id="artist" class="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#79b8f2] sm:text-sm/6 outline-none">
+                        </div>
+                        <div class="mt-2">
+                            <label for="country" class="block text-sm/6 font-medium text-gray-900">Årtal</label>
+                            <select id="country" name="country" autocomplete="country-name" class="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#79b8f2] sm:text-sm/6 outline-none">
+                                <option>2024</option>
+                                <option>2023</option>
+                                <option>2022</option>
+                                <option>2021</option>
+                                <option>2020</option>
+                                <option>2019</option>
+                                <option>2018</option>
+                                <option>2017</option>
+                                <option>2016</option>
+                                <option>2015</option>
+                                <option>2014</option>
+                                <option>2013</option>
+                                <option>2012</option>
+                                <option>2011</option>
+                                <option>2010</option>
+                                <option>2009</option>
+                                <option>2008</option>
+                                <option>2007</option>
+                                <option>2006</option>
+                                <option>2005</option>
+                                <option>2004</option>
+                                <option>2003</option>
+                                <option>2002</option>
+                                <option>2001</option>
+                                <option>2000</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex justify-end">
+                        <button type="button" class="text-sm/6 font-semibold text-gray-900 mr-3">Rensa</button>
+                        <button type="submit" class="rounded-md bg-[#f16491] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#ff91b4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Spara</button>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </main>
+
+    <footer class="mt-auto flex items-center justify-center h-[70px]">
+        Max Assermark, 2024
+    </footer>
+</body>
+</html>
