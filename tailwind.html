@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-[Poppins] h-screen bg-gradient-to-t from-[#79b8f2] to-[#f16491] flex flex-col">
-    <header class="flex justify-between items-center w-[92%] h-[70px] mx-auto">
+<body class="font-[Poppins] bg-[#f16491] flex flex-col">
+    <header class="flex justify-between items-center w-[92%] h-[75px] mx-auto">
         <img class="w-20" src="images/tailwind-icon.png">
         <nav class="">
             <ul class="flex items-center gap-[4vw] font-semibold">
@@ -23,11 +23,24 @@
     <main class="flex-row bg-white/[0.6] w-[700px] max-w-full mx-auto mt-10 p-10 rounded-md">
         <article>
             <h2 class="font-semibold">Tailwind</h2>
-            <p>Denna undersida är i sin helhet stylad med Tailwind CSS.</p>
+            <p>Denna undersida är i sin helhet stylad med <a href="https://tailwindcss.com/" class="underline text-[#79b8f2] hover:text-white">Tailwind CSS</a>. Tailwind är ett CSS-ramverk som erbjuder en uppsättning fördefinierade klasser som låter oss skapa webbsidor utan att skriva egen CSS. Det enda vi egentligen gör är att applicera rätt kombination av de fördefinierade klasserna för att nå det utseende vi är ute efter.</p>
+            <h2 class="font-semibold mt-3">Fördelar</h2>
+            <ul class="list-disc">
+                <li class="ml-10">Snabbt och smidigt att skapa och justera design direkt i HTML.</li>
+                <li class="ml-10">Skapar en konsekvent design genom användning av standardiserade värden.</li>
+                <li class="ml-10">Bra dokumentation som är enkel att söka i efter det man är ute efter.</li>
+                <li class="ml-10">Fördefinierade klasser för olika skärmstorlekar.</li>
+            </ul>
+            <h2 class="font-semibold mt-3">Nackdelar</h2>
+            <ul class="list-disc">
+                <li class="ml-10">HTML-filen blir ganska stökig och kan vara lite svårläst.</li>
+                <li class="ml-10">Tailwind blir väldigt kopplad till designen vilket gör det svårt att byta ramverk.</li>
+                <li class="ml-10">Det blir mycket kodupprepning om man inte använder färdiga komponenter.</li>
+            </ul>
         </article>
 
         <article>
-            <table class="min-w-full divide-y divide-[#f16491] mt-2">
+            <table class="min-w-full divide-y divide-[#79b8f2] mt-2">
                 <thead>
                     <tr>
                         <th class="font-medium text-gray-800 text-start px-3 py-3">TITEL</th>
@@ -36,7 +49,7 @@
                         <th class="font-medium text-gray-800 text-start px-3 py-3">ÅRTAL</th>
                     </tr>
                 </thead>
-                <tbody class="divide-y divide-[#f16491]">
+                <tbody class="divide-y divide-[#79b8f2]">
                     <tr>
                         <td class="px-3 py-4 whitespace-nowrap text-sm">Two Faced</td>
                         <td class="px-3 py-4 whitespace-nowrap text-sm">Linkin Park</td>
@@ -83,16 +96,16 @@
                             <input type="text" name="title" id="title" class="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#79b8f2] sm:text-sm/6 outline-none">
                         </div>
                         <div class="mt-2">
-                            <label for="artist" class="block text-sm/6 font-medium text-gray-900">Artist</label>
-                            <input type="text" name="artist" id="artist" class="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#79b8f2] sm:text-sm/6 outline-none">
+                            <label for="artist" class="block text-sm/6 font-medium text-gray-900">Artist(er)</label>
+                            <textarea id="artist" name="artist" rows="3" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#79b8f2] sm:text-sm/6 outline-none"></textarea>
                         </div>
                         <div>
-                            <label for="artist" class="block text-sm/6 font-medium text-gray-900">Artist</label>
-                            <input type="text" name="artist" id="artist" class="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#79b8f2] sm:text-sm/6 outline-none">
+                            <label for="album" class="block text-sm/6 font-medium text-gray-900">Album</label>
+                            <input type="text" name="album" id="album" class="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#79b8f2] sm:text-sm/6 outline-none">
                         </div>
                         <div class="mt-2">
-                            <label for="country" class="block text-sm/6 font-medium text-gray-900">Årtal</label>
-                            <select id="country" name="country" autocomplete="country-name" class="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#79b8f2] sm:text-sm/6 outline-none">
+                            <label for="year" class="block text-sm/6 font-medium text-gray-900">Årtal</label>
+                            <select id="year" name="year" class="mt-2 block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#79b8f2] sm:text-sm/6 outline-none">
                                 <option>2024</option>
                                 <option>2023</option>
                                 <option>2022</option>
@@ -121,7 +134,18 @@
                                 </select>
                         </div>
                     </div>
-                    <div class="mt-4 flex justify-end">
+
+                    <div class="relative flex gap-x-3 mt-6">
+                        <div class="flex h-6 items-center">
+                            <input id="from-top" name="from-top" type="checkbox" class="size-4 border-gray-300 text-gray-900 focus:ring-[#79b8f2]">
+                        </div>
+                            <div class="text-sm/6">
+                                <label for="from-top" class="font-medium text-gray-900">Infoga överst</label>
+                                <p class="text-gray-500">Infoga låten högst upp i listan istället för längst ner</p>
+                            </div>   
+                    </div>
+
+                    <div class="mt-6 flex justify-end">
                         <button type="button" class="text-sm/6 font-semibold text-gray-900 mr-3">Rensa</button>
                         <button type="submit" class="rounded-md bg-[#f16491] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#ff91b4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Spara</button>
                     </div>
