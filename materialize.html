@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems, {});
+        console.log("yaho");
+  });
+</script>
+<style>
+    .brand-logo { margin-left: 10px; }
+    form { max-width: 400px; }
+    article { margin-bottom: 50px; }
+    .content { font-size: 18px }
+</style>
+<body class="grey lighten-2">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo ml-3 left hide-on-small-and-down">Moment 1</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="tailwind.html">Tailwind</a></li>
+                <li class="active"><a href="materialize.html">Materialize</a></li>
+                <li><a href="publicering.html">Publicering</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <article>
+                <h2>Materialize</h2>
+                <p class="content">Denna undersida är i sin helhet stylad med <a href="https://materializecss.com/">Materialize CSS</a>. Materialize är baserat på Googles Material Design-principer. Att arbeta med det kändes väldigt likt Tailwind. Den stora skillnaden jag märkte var att Materialize hade mycket mer färdiga komponenter men att det var svårare att specifiera smådetaljer i utseendet. Som jag förstår det nu i efterhand så borde man verkligen använda SASS när man jobbar med Materialize, det verkar underlätta det jag hade lite problem med avsevärt.</p>
+                <p class="flow-text">En trevlig klass i Materialize är flow-text. Det ovanstående textstycket har en fast storlek på 18px medans denna har givits klassen flow-text. Denna klass gör texten fullt responsiv och låter den ändra sin storlek för optimal läsbarhet samtidigt som den håller sig inom angivet utrymme. Prova att ändra storlek på webbläsarfönstret!</p>
+                <ul class="collection with-header">
+                    <li class="collection-header"><h5>Fördelar</h5></li>
+                    <li class="collection-item">Professionell design som följer Googles officiella riktlinjer.</li>
+                    <li class="collection-item">Stort utbud av färdiga komponenter.</li>
+                    <li class="collection-item">Bra stöd för responsiv design.</li>
+                    <li class="collection-item">Väldigt smidig att komma igång med.</li>
+                </ul>
+
+                <ul class="collection with-header">
+                    <li class="collection-header"><h5>Nackdelar</h5></li>
+                    <li class="collection-item">Lite svårt att detaljstyra utseendet.</li>
+                    <li class="collection-item">Vissa komponenter är beroende av JavaScript och därmed bundna till Materializes egen implementation.</li>
+                </ul>
+            </article>
+            
+            <article>
+                <h4>Låtar</h4>
+                <table class="highlight responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Titel</th>
+                            <th>Artist</th>
+                            <th>Album</th>
+                            <th>Årtal</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>Goodbye</td>
+                            <td>Parkwood</td>
+                            <td>Close To Home</td>
+                            <td>2018</td>
+                        </tr>
+                        <tr>
+                            <td>Stained</td>
+                            <td>Linkin Park</td>
+                            <td>From Zero</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>Hypnosis</td>
+                            <td>Sleep Token</td>
+                            <td>This Place Will Become Your Tomb</td>
+                            <td>2021</td>
+                        </tr>
+                        <tr>
+                            <td>Hollywood's Bleeding</td>
+                            <td>Post Malone</td>
+                            <td>Hollywood's Bleeding</td>
+                            <td>2019</td>
+                        </tr>
+                        <tr>
+                            <td>Meine Tränen</td>
+                            <td>Rammstein</td>
+                            <td>Zeit</td>
+                            <td>2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        
+            <article>
+                <h4>Lägg till en låt</h4>
+                <form>
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="title" type="text">
+                            <label for="title">Titel</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field">
+                            <label for="artist">Artist (detta är en textarea så använd gärna flera rader)</label>
+                            <textarea id="artist" class="materialize-textarea"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="album" type="text">
+                            <label for="album">Album</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <select>
+                                <option>2024</option>
+                                <option>2023</option>
+                                <option>2022</option>
+                                <option>2021</option>
+                                <option>2020</option>
+                                <option>2019</option>
+                                <option>2018</option>
+                                <option>2017</option>
+                                <option>2016</option>
+                                <option>2015</option>
+                                <option>2014</option>
+                                <option>2013</option>
+                                <option>2012</option>
+                                <option>2011</option>
+                                <option>2010</option>
+                                <option>2009</option>
+                                <option>2008</option>
+                                <option>2007</option>
+                                <option>2006</option>
+                                <option>2005</option>
+                                <option>2004</option>
+                                <option>2003</option>
+                                <option>2002</option>
+                                <option>2001</option>
+                                <option>2000</option>
+                            </select>
+                            <label>Årtal</label>
+                          </div>
+                    </div>
+    
+                    <div class="row">
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Infoga låt överst i listan</span>
+                            </label>
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <button type="submit" class="btn">Lägg till</button>
+                    </div>
+                </form>
+            </article>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <h5 class="white-text">Moment 1</h5>
+            <p class="grey-text text-lighten-4">Fullstack-utveckling med ramverk</p>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                © 2024 Max Assermark
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
